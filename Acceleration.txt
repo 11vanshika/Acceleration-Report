@@ -1,0 +1,26 @@
+Acceleration Round(summary):
+1. Visual Studio:- Visual Studio is an integrated development environment (IDE) from Microsoft.
+  It is used to develop computer programs, as well as websites, web apps, web services and mobile apps.
+2.  Some Visual Studio ShortCut :-
+     Ctrl+F5:- F5 is used to start your project in debug mode and Ctrl-F5 is used to start your project without debug mode.
+     Ctrl+Shift+A :- Ctrl+Shift+A is used to add new item to your project.
+     Ctrl+K+C is used to do comment a selected block of code.
+3. Breakpoint:- Breakpoints are one of the most important debugging techniques in your developer's toolbox.
+ You set breakpoints wherever you want to pause debugger execution.
+4.NuGet:- A NuGet package contains reusable code that other developers have made available to you for use in your projects. You can install a NuGet package in a Microsoft Visual Studio project by using the NuGet Package Manager, 
+     the Package Manager Console, or the .NET CLI.
+5.About (dot).NET framework and .NET core..
+    -> .NET Framework:- .NET is a framework that provides a programming guidelines that can be used to develop a wide range of applications–––from web to mobile to Windows-based applications.
+                          The.NET framework can work with several programming languages such as C#, VB.NET, C++ and F#..
+    -> >NET Core:- .NET Core is a new version of .NET Framework, which is a free, open-source, general-purpose development platform maintained by Microsoft.
+                    It is a cross-platform framework that runs on Windows, macOS, and Linux operating systems.
+                   .NET Core Framework can be used to build different types of applications such as mobile, desktop, web, cloud, IoT, machine learning, microservices, game, etc.
+6.Difference between .NET framework and .NET core:- NET Framework to create Windows desktop and server-based applications. 
+                                 This includes ASP.NET web applications. On the other hand, .NET Core is used to create server applications that run on Windows, Linux and Mac.
+7. Difference between Debug and Release:-
+              -> Debug Mode:-  The debug mode code is not optimized..
+                               In Debug mode the application is mainly meant for debuging for saying error..
+                               
+              -> Release Mode: When we are going to production mode or deploying the application to the server. 
+                               The release mode code is optimized.
+       
