@@ -10,3 +10,138 @@
     Base Class (parent) :- the class being inherited from..
 4)Constructor:-A class constructor is a special member function of a class that is executed whenever we create new objects of that class.
                A constructor will have exact same name as the class and it does not have any return..
+5)Abstract Classes and Methods:-
+->Data abstraction is the process of hiding certain details and showing only essential information to the user.
+  Abstraction can be achieved with either abstract classes or interfaces..
+->The abstract keyword is used for classes and methods:
+->Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+->Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).
+ Syntax :-
+  abstract class Animal 
+{
+  public abstract void animalSound();//abstract method (does not have a body)
+  public void sleep() // non-abstract method 
+  {
+    Console.WriteLine("Zzz");
+  }
+}
+6)Interface:- 
+ An interface is a completely "abstract class", which can only contain abstract methods and properties (with empty bodies)..
+syntax:
+ interface Animal 
+{
+  void animalSound(); // interface method (does not have a body)
+  void run(); // interface method (does not have a body)
+}
+
+7)Polymorphism:-
+The term "Polymorphism" is the combination of "poly" + "morphs" which means many forms.
+There are two types of polymorphism in C#: compile time polymorphism and runtime polymorphism.
+Compile time polymorphism is achieved by method overloading and operator overloading in C#. 
+Runtime polymorphism in achieved by method overriding.
+
+# Compile Time Polymorphism :- 
+  class Printdata {
+      void print(int i) {
+         Console.WriteLine("Printing int: {0}", i );
+      }
+
+      void print(double f) {
+         Console.WriteLine("Printing float: {0}" , f);
+      }
+  }
+ static void Main(string[] args) {
+         Printdata p = new Printdata();
+
+         // Call print to print integer
+         p.print(5);
+         // Call print to print float
+         p.print(500.263);
+   }   
+
+# Run Time polymorphism :-
+public class Shape{  
+    public virtual void draw(){  
+        Console.WriteLine("drawing...");  
+    }  
+}  
+public class Rectangle: Shape  
+{  
+    public override void draw()  
+    {  
+        Console.WriteLine("drawing rectangle...");  
+    }  
+      
+}  
+ public static void Main()  
+    {  
+        Shape s;  
+        s = new Shape();  
+        s.draw();  
+        s = new Rectangle();  
+        s.draw();  
+    }
+8)Partial class :-
+  Partial Class is a unique feature of C#. It can break the functionality of a single class into many files. 
+  When the application is compiled, these files are then reassembled into a single class file. The partial keyword is used to build a partial class. 
+
+9)Enums :-
+  An enum is a special "class" that represents a group of constants (unchangeable/read-only variables).
+  To create an enum, use the enum keyword (instead of class or interface), and separate the enum items with a comma:
+ #Syntax :-
+   enum Level 
+   {
+      Low,
+      Medium,
+      High
+   }
+10)Extension method :-
+
+In C#, the extension method concept allows you to add new methods in the existing class or
+ in the structure without modifying the source code of the original type and you do not require any kind of 
+ special permission from the original type and there is no need to re-compile the original type.
+Extension methods, as the name suggests, are additional methods.
+ Extension methods allow you to inject additional methods without modifying, deriving or recompiling the original class, struct or interface.
+ Extension methods can be added to your own custom class, .NET framework classes, or third party classes or interfaces.
+
+11)Property:-
+In c#, Property is an extension of the class variable. 
+It provides a mechanism to read, write, or change the class variable's value without affecting the external way of accessing it in our applications.
+# Syntax;
+ <access_modifier> <return_type> <property_name>
+{
+    get
+    {
+       // return property value
+    }
+    set
+    {
+      // set a new value
+    }
+}
+
+12) Exception handling
+ An exception is a problem that arises during the execution of a program. A C# exception is a response to an exceptional circumstance that arises while a program is running, such as an attempt to divide by zero.
+ Exceptions provide a way to transfer control from one part of a program to another. C# exception handling is built upon four keywords: try, catch, finally, and throw.
+
+->try − A try block identifies a block of code for which particular exceptions is activated. It is followed by one or more catch blocks.
+
+->catch − A program catches an exception with an exception handler at the place in a program where you want to handle the problem. The catch keyword indicates the catching of an exception.
+
+->finally − The finally block is used to execute a given set of statements, whether an exception is thrown or not thrown. For example, if you open a file, it must be closed whether an exception is raised or not.
+
+->throw − A program throws an exception when a problem shows up. This is done using a throw keyword.
+ 
+#Syntax:-
+   try {
+   // statements causing exception
+} catch( ExceptionName e1 ) {
+   // error handling code
+} catch( ExceptionName e2 ) {
+   // error handling code
+} catch( ExceptionName eN ) {
+   // error handling code
+} finally {
+   // statements to be executed
+}
+               
