@@ -145,4 +145,31 @@ It provides a mechanism to read, write, or change the class variable's value wit
    // statements to be executed
 }
 
-13) I have completed Employee Management Project :
+13) Indexers :-
+              C# indexers are usually known as smart arrays. A C# indexer is a class property that allows you to access a member variable of a class or struct using the features of an array.
+              In C#, indexers are created using this keyword.Indexers in C# are applicable on both classes and structs. 
+       Syntax:
+             <modifier> <return type> this [argument list]  
+                     {  
+                       get  
+                        {  
+                          // your get block code  
+                        }  
+                       set  
+                        {  
+                         // your set block code  
+                        }  
+                       } 
+14) SOLID Principles :-
+          SOLID design principles are arguably the most popular design principles for object oriented software development.
+   a) Single Reponsibility Principle(SRP):- A class should have only one responsibility. Hence only a single purpose.
+   b) Open/closed Principles(OSP):-Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+   c)Liskov Substitution Principles(LSR):-Objects of a superclass shall be replaceable with objects of its subclasses without breaking the application.
+   d)Interface Segregation Principles(ISP):-Clients should not be forced to rely on interfaces they don't use.
+   e)Dependency Inversion Princilpes(DIP):-Technically, dependency inversion comprises two separate principles:
+
+          "High-level modules should not depend on low-level modules. Both should depend on abstractions."
+          "Abstractions should not depend on details. Details should depend on abstractions."
+15) Attributes :-
+         An attribute is a declarative tag that is used to convey information to runtime about the behaviors of various elements like classes, methods, structures, enumerators, assemblies etc.A declarative tag is depicted by square ([ ]) brackets placed above the element it is used for.
+         Attributes are used for adding metadata, such as compiler instruction and other information such as comments, description, methods and classes to a program. The .Net Framework provides two types of attributes: the pre-defined attributes and custom built attributes.
